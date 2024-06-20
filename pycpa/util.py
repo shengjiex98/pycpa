@@ -297,17 +297,15 @@ def time_to_cycles(value, freq, base_time, rounding="ceil"):
 
 def gcd(a, b):
     """Return greatest common divisor using Euclid's Algorithm."""
-    return fractions.gcd(a, b)
+    return math.gcd(a, b)
 
 def lcm(a, b):
     """ Return lowest common multiple."""
     return (a * b) / gcd(a, b)
 
-
 def GCD(terms):
     """ Return gcd of a list of numbers."""
-    return functools.reduce(fractions.gcd, terms)
-
+    return functools.reduce(math.gcd, terms)
 
 def LCM(terms):
     """Return lcm of a list of numbers."""
