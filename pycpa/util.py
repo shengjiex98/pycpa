@@ -301,15 +301,15 @@ def gcd(a, b):
 
 def lcm(a, b):
     """ Return lowest common multiple."""
-    return (a * b) / gcd(a, b)
+    return math.lcm(a, b)
 
 def GCD(terms):
     """ Return gcd of a list of numbers."""
-    return functools.reduce(math.gcd, terms)
+    return math.gcd(*terms)
 
 def LCM(terms):
     """Return lcm of a list of numbers."""
-    return functools.reduce(lcm, terms)
+    return math.lcm(*terms)
 
 
 def combinations_with_replacement(iterable, r):

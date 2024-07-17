@@ -240,7 +240,7 @@ def cause_effect_chain(chain, task_results, details=None, semantics='data-age'):
                 delay = _calculate_forward_distance(sequence[i], sequence[i+1], task_results, 
                         details=details)
             else:
-                raise NotImplementedException()
+                raise NotImplementedError("Unknown semantics: %s" % semantics)
 
             l_max += delay
 
