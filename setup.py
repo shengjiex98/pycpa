@@ -31,5 +31,6 @@ setup(name='pycpa',
                       'topology_plot' : 'pygraphviz',
                       'gantt_charts' : 'simpy',
                       'xls' : 'xlrd',
-                      'doc' : 'sphinx'}
+                      'doc' : 'sphinx',
+                      'complete': ['matplotlib', 'numpy', 'pygraphviz', 'simpy', 'xlrd', 'sphinx']}
      )
